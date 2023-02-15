@@ -1,4 +1,2 @@
-import './map\maps\index.html';
-import Geo from './geo';
-import './map';
+import Geo from './geo.js'
 new Geo();

@@ -1,4 +1,4 @@
-import ymaps from './map';
+import ymaps from './map.js';
 
 
 export default class Geo {
