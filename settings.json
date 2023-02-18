@@ -1,0 +1,10 @@
+{
+    "proxy": {
+      "/map/index.html": {
+        "target": "http://localhost:8181",
+        "pathRewrite": {
+          "^/map": ""
+        }
+      }
+    }
+  }
