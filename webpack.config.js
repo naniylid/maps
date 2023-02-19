@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const fs = require('fs');
 const path = require('path');
 
-const root = path.resolve('map');
+const root = path.resolve('projects');
 const projects = fs.readdirSync(root);
 const entries = {};
 const htmlPlugins = [];
@@ -16,6 +16,7 @@ for (const project of projects) {
   htmlPlugins.push(
     new HtmlPlugin({
       title: project,
+      template: path.resolve('./layout.html'),
       filename: `${project}/index.html`,
       chunks: [project],
     })
