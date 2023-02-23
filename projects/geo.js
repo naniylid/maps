@@ -42,8 +42,8 @@ export default class Geo {
 
     async onClick(coords) {
         this.map.openBalloonContent(coords, 'Загрузка...');
-        const list = await this.callApi('list', {coords});
         const form = this.createForm(coords);
+       // const list = await this.callApi('list', {coords});
         this.map.openBalloonContent(coords, form.innerHTML);
     }
 
